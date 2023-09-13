@@ -12,9 +12,7 @@ import { HomeComponent } from './components/pages/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { NewMomentComponent } from './components/pages/new-moment/new-moment.component';
 import { MomentFormComponent } from './components/moment-form/moment-form.component';
-import { MomentComponent } from './services/moment/moment.component';
-import { CommentComponent } from './services/comment/comment.component';
-import { MessagesComponent } from './services/messages/messages.component';
+
 
 @NgModule({
   declarations: [
@@ -25,9 +23,7 @@ import { MessagesComponent } from './services/messages/messages.component';
     HomeComponent,
     NewMomentComponent,
     MomentFormComponent,
-    MomentComponent,
-    CommentComponent,
-    MessagesComponent
+
   ],
   imports: [
     BrowserModule,
