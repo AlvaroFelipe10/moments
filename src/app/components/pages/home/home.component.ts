@@ -1,12 +1,12 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+import { MomentService } from 'src/app/services/moment.service';
 
 import { Moment } from 'src/app/Moment';
 
 import { environment } from 'src/environments/environment';
 
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
-import { MomentService } from 'src/app/services/moment.service';
 
 @Component({
   selector: 'app-home',
@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
       const data = items.data;
 
       data.map((item) => {
-        item.create_at = new Date(item.create_at!).toLocaleDateString(
+        item.created_at = new Date(item.created_at!).toLocaleDateString(
           'pt-BR'
         );
       });
